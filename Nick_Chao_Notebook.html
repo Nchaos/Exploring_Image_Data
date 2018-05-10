@@ -18816,7 +18816,9 @@ Wall time: 1h 40s
 <div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># # the above operation takes a long time to save the inverse transform parameters</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># from https://github.com/eclarson/MachineLearningNotebooks/blob/master/04.%20Dimension%20Reduction%20and%20Images.ipynb</span>
+
+<span class="c1"># # the above operation takes a long time to save the inverse transform parameters</span>
 <span class="c1"># # so let&#39;s save out the results to load in later!</span>
 
 <span class="c1"># # No need to run again</span>
@@ -18858,7 +18860,9 @@ Wall time: 1h 40s
 <div class="prompt input_prompt">In&nbsp;[47]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">skimage.measure</span> <span class="k">import</span> <span class="n">compare_ssim</span> <span class="k">as</span> <span class="n">ssim</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Modified from https://github.com/eclarson/MachineLearningNotebooks/blob/master/04.%20Dimension%20Reduction%20and%20Images.ipynb</span>
+
+<span class="kn">from</span> <span class="nn">skimage.measure</span> <span class="k">import</span> <span class="n">compare_ssim</span> <span class="k">as</span> <span class="n">ssim</span>
 <span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="k">import</span> <span class="n">widgets</span>  <span class="c1"># make this interactive!</span>
 <span class="c1"># compare the different methods</span>
 
@@ -18924,10 +18928,10 @@ Wall time: 1h 40s
 
  
  
-<div id="f5e5f90d-4f2e-4f39-9469-d8ec85bfbc0e"></div>
+<div id="c1449071-cecb-4e96-945b-4250d16fef85"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#f5e5f90d-4f2e-4f39-9469-d8ec85bfbc0e');
+var element = $('#c1449071-cecb-4e96-945b-4250d16fef85');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "7e2b02d6277f417ead1b8347dccb635b", "version_major": 2, "version_minor": 0}
@@ -18968,7 +18972,9 @@ var element = $('#f5e5f90d-4f2e-4f39-9469-d8ec85bfbc0e');
 <div class="prompt input_prompt">In&nbsp;[63]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">random</span> <span class="k">import</span> <span class="n">randrange</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Modified from https://github.com/tylergiallanza/CSE5324-Labs/blob/master/lab-two/Momin%20Notebook-Full%20Data.ipynb</span>
+
+<span class="kn">from</span> <span class="nn">random</span> <span class="k">import</span> <span class="n">randrange</span>
 
 <span class="n">SSIM_KPCA</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">SSIM_PCA</span> <span class="o">=</span> <span class="p">[]</span>
@@ -19055,7 +19061,9 @@ Full PCA SSIM Average 0.746604317956
 <div class="prompt input_prompt">In&nbsp;[75]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">skimage.feature</span> <span class="k">import</span> <span class="n">daisy</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># from https://github.com/eclarson/MachineLearningNotebooks/blob/master/04.%20Dimension%20Reduction%20and%20Images.ipynb</span>
+
+<span class="kn">from</span> <span class="nn">skimage.feature</span> <span class="k">import</span> <span class="n">daisy</span>
 
 <span class="n">img</span> <span class="o">=</span> <span class="n">img_data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">img_size</span><span class="p">)</span>
 
@@ -22904,7 +22912,9 @@ UyYUznoAAAAASUVORK5CYII=
 <div class="prompt input_prompt">In&nbsp;[78]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">features</span> <span class="o">=</span> <span class="n">daisy</span><span class="p">(</span><span class="n">img</span><span class="p">,</span><span class="n">step</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">radius</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">rings</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">histograms</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">orientations</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">visualize</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># from https://github.com/eclarson/MachineLearningNotebooks/blob/master/04.%20Dimension%20Reduction%20and%20Images.ipynb</span>
+
+<span class="n">features</span> <span class="o">=</span> <span class="n">daisy</span><span class="p">(</span><span class="n">img</span><span class="p">,</span><span class="n">step</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">radius</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">rings</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">histograms</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">orientations</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">visualize</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">features</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">features</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">features</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">features</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
 </pre></div>
@@ -22938,7 +22948,7 @@ UyYUznoAAAAASUVORK5CYII=
 <div class="prompt input_prompt">In&nbsp;[79]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Borrowed from https://github.com/eclarson/MachineLearningNotebooks/blob/master/04.%20Dimension%20Reduction%20and%20Images.ipynb</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># from https://github.com/eclarson/MachineLearningNotebooks/blob/master/04.%20Dimension%20Reduction%20and%20Images.ipynb</span>
 
 <span class="c1"># create a function to tak in the row of the matric and return a new feature</span>
 <span class="k">def</span> <span class="nf">apply_daisy</span><span class="p">(</span><span class="n">row</span><span class="p">,</span><span class="n">shape</span><span class="p">):</span>
@@ -23068,7 +23078,9 @@ Wall time: 15min 17s
 <div class="prompt input_prompt">In&nbsp;[84]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics.pairwise</span> <span class="k">import</span> <span class="n">pairwise_distances</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># from https://github.com/eclarson/MachineLearningNotebooks/blob/master/04.%20Dimension%20Reduction%20and%20Images.ipynb</span>
+
+<span class="kn">from</span> <span class="nn">sklearn.metrics.pairwise</span> <span class="k">import</span> <span class="n">pairwise_distances</span>
 <span class="c1"># find the pairwise distance between all the different image features</span>
 <span class="o">%</span><span class="k">time</span> dist_matrix = pairwise_distances(daisy_features)
 </pre></div>
